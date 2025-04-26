@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>energy</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap');
+
+    body {
+        background: url('https://i.imgur.com/OA3GzaH.jpeg') no-repeat center center fixed;
+      background-size: cover;
+      color: #eee;
+      font-family: 'JetBrains Mono', monospace;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+      overflow: hidden;
+    }
+
+    .container {
+      text-align: center;
+      animation: fadeIn 1s ease-in;
+    }
+
+    h1 {
+      font-size: 2.0rem;
+      text-shadow: 0 0 5px #2c2424, 0 0 10px #2c2424, 0 0 15px #2c2424;
+      letter-spacing: 0.05em;
+      color: #666;
+      position: relative;
+    }
+
+
+    @keyframes blink {
+      50% { opacity: 0; }
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+
+    @keyframes flicker {
+      0% { opacity: 0; }
+      50% { opacity: 1; }
+      100% { opacity: 0; }
+    }
+
+    p {
+      color: #666;
+      font-size: 0.9rem;
+      margin-top: 20px;
+      animation: flicker 5s infinite alternate;
+    }
+
+    .english {
+      display: none;
+    }
+
+    .korean:active {
+      display: none;
+    }
+
+    p:hover .english {
+      display: inline;
+    }
+
+    p:hover .korean {
+      display: none;
+    }
+
+    .Fortnite {
+    color: inherit; /* Inherit color from parent or set your preferred color */
+    text-decoration: none; /* Removes the underline */
+    color: #666;
+  }
+
+  .login {
+    color: inherit; /* Inherit color from parent or set your preferred color */
+    text-decoration: none; /* Removes the underline */
+    color: #666;
+  }
+
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>energy</h1>
+    <p>
+        <span class="korean">말보다는 행동이지</span>
+      </p>
+
+      <a href="https://energy.sellhub.cx/product/fn/" class="Fortnite">fortnite</a>
+      <a href="https://energy.sellhub.cx/order/" class="login">login</a>
+  </div>
+</body>
+</html>
